@@ -3,7 +3,10 @@ import Aura from '@primevue/themes/aura'
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
 
-  css: ["primeicons/primeicons.css"],
+  css: [
+    "primeicons/primeicons.css",
+    "@mdi/font/css/materialdesignicons.css"
+  ],
 
   modules: [
     "@nuxt/eslint",
@@ -23,7 +26,7 @@ export default defineNuxtConfig({
         preset: Aura,  
         options: {
           prefix: "p",
-          darkModeSelector: "system",
+          darkModeSelector: false,
           cssLayer: false,
         },
       },
